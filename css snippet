@@ -1,4 +1,46 @@
+<!--CARD FRONT-->
+<div class=cabeçalho>
+		
+ 		RUSSO
+	
+</div>
 
+<div class=pergunta>
+
+		{{edit:Frente}}
+
+<div class="dica"></div>
+
+</div>
+
+<!--<div class=tags>
+
+TAGS: {{Tags}}
+
+</div>-->
+
+<!--CARD BACK-->
+{{FrontSide}}
+
+<div <span class="resposta">{{edit:Verso}}</span>
+<script>
+fields = document.querySelectorAll('.resposta');
+for(var i=0; i<fields.length; i++) {
+fields[i].innerHTML = fields[i].innerHTML
+.replace('Certo', '<span style="color: #16A085">CERTO</span>')
+.replace('certo', '<span style="color: #16A085">CERTO</span>')
+.replace('Errado', '<span style="color: #C0392B">ERRADO</span>')
+.replace('errado', '<span style="color: #C0392B">ERRADO</span>')
+}
+</script>
+</div>
+
+{{#Justificativa}}<div class=justificativa>{{edit:Justificativa}}
+
+</div>{{/Justificativa}}
+
+
+<!--STYLE-->
 .card {
 background-color: #E5E8E8;
 }
@@ -13,7 +55,7 @@ letter-spacing: 2px;
 font-weight: bold;
 font-size: 35px;
 color: #FFF;
-width: 800px;
+width: auto;
 text-align: center;
 padding: 20px;
 border-radius: 7px 7px 0px 0px;
@@ -31,7 +73,7 @@ font-size: 20px;
 color: #2C3E50;
 text-align: justify;
 height: auto;
-width: 800px;
+width: auto;
 padding: 30px 30px ;
 box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
 background-color: #FFF;
@@ -44,7 +86,7 @@ left: 50%;
 transform: translateX(-50%);
 font-family: helvetica;
 height: auto;
-width: 800px;
+width: auto;
 text-align: center;
 font-weight: bold;
 font-size: 30px;
@@ -67,34 +109,13 @@ font-size: 18px;
 color: #2C3E50;
 text-align: justify;
 height: auto;
-width: 800px;
+width: auto;
 padding: 30px 30px;
 margin-top: 40px;
 box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
 background-color: #FFF;
 box-sizing: border-box;
 border-radius: 7px 7px 7px 7px;
+
 }
 
-
-@media (min-width: 300px) {
- 	.card {
-    max-width: auto;
-  	}
-
-	.cabecalho {
-	max-width: auto;
-	}
-
-	.pergunta {
-	max-width: auto;
-	}
-
-	.resposta {
-	max-width: auto;
-	}
-
-	.justificativa {
-	max-width: auto;
-	}
-}
