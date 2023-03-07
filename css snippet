@@ -76,3 +76,25 @@ box-sizing: border-box;
 border-radius: 7px 7px 7px 7px;
 }
 
+
+@media (min-width: 300px) {
+ 	.card {
+    max-width: auto;
+  	}
+
+	.cabecalho {
+	max-width: auto;
+	}
+
+	.pergunta {
+	max-width: auto;
+	}
+
+	.resposta {
+	max-width: auto;
+	}
+
+	.justificativa {
+	max-width: auto;
+	}
+}
